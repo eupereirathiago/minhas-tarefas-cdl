@@ -1,0 +1,190 @@
+/* RNF03: Cores em tons pastéis puxando para o azul */
+* { 
+  box-sizing: border-box; 
+  margin: 0; 
+  padding: 0; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body { 
+  background-color: #eef4f8; 
+  display: flex; 
+  justify-content: center; 
+  padding: 30px 15px; 
+}
+
+.container { 
+  background: #ffffff; 
+  width: 100%; 
+  max-width: 500px; 
+  padding: 25px; 
+  border-radius: 16px; 
+  box-shadow: 0 8px 20px rgba(160, 185, 205, 0.2); 
+  border: 1px solid #d0e1fd; 
+}
+
+h2 { 
+  text-align: center; 
+  color: #2c4a6f; 
+  margin-bottom: 20px; 
+  font-weight: 600; 
+}
+
+.form-group { 
+  display: flex; 
+  flex-direction: column; 
+  gap: 10px; 
+  margin-bottom: 15px; 
+}
+
+input[type="text"], input[type="date"], select { 
+  padding: 12px; 
+  border: 1px solid #c2d6eb; 
+  border-radius: 8px; 
+  font-size: 14px; 
+  background-color: #f7fafd; 
+  color: #333; 
+  outline: none; 
+}
+
+input[type="text"]:focus, input[type="date"]:focus, select:focus { 
+  border-color: #7eaad9; 
+  background-color: #fff; 
+}
+
+.row-inputs { 
+  display: flex; 
+  gap: 8px; 
+}
+
+.row-inputs select, .row-inputs input { 
+  flex: 1; 
+}
+
+button.btn-add { 
+  background: #7eaad9; 
+  color: white; 
+  border: none; 
+  padding: 12px; 
+  border-radius: 8px; 
+  cursor: pointer; 
+  font-weight: bold; 
+  font-size: 15px; 
+  transition: background 0.2s; 
+}
+
+button.btn-add:hover { 
+  background: #6090c2; 
+}
+
+.counter { 
+  font-size: 13px; 
+  color: #5a7b9c; 
+  margin-bottom: 12px; 
+  text-align: right; 
+  font-weight: 500; 
+}
+
+ul { 
+  list-style: none; 
+}
+
+li { 
+  background: #f0f5fa; 
+  padding: 12px; 
+  border: 1px solid #d8e5f2; 
+  margin-bottom: 10px; 
+  border-radius: 8px; 
+  display: flex; 
+  flex-direction: column; 
+  gap: 8px; 
+}
+
+.task-header { 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.task-title { 
+  font-weight: bold; 
+  color: #2b425b; 
+  word-break: break-all; 
+}
+
+.task-details { 
+  font-size: 12px; 
+  color: #617d98; 
+  display: flex; 
+  gap: 10px; 
+}
+
+.badge-prio { 
+  padding: 3px 8px; 
+  border-radius: 12px; 
+  font-size: 11px; 
+  font-weight: bold; 
+}
+
+.prio-Alta { 
+  background: #fde8e8; 
+  color: #9b2c2c; 
+}
+
+.prio-Média { 
+  background: #fef5d6; 
+  color: #8a6d3b; 
+}
+
+.prio-Baixa { 
+  background: #e3f9e5; 
+  color: #276749; 
+}
+
+.actions { 
+  display: flex; 
+  gap: 6px; 
+  justify-content: flex-end; 
+  margin-top: 4px; 
+}
+
+.btn-edit { 
+  background: #b2d3ec; 
+  color: #1e4265; 
+  border: none; 
+  padding: 6px 12px; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  font-size: 12px; 
+  font-weight: 600; 
+}
+
+.btn-del { 
+  background: #f5b7b7; 
+  color: #742a2a; 
+  border: none; 
+  padding: 6px 12px; 
+  border-radius: 6px; 
+  cursor: pointer; 
+  font-size: 12px; 
+  font-weight: 600; 
+}
+
+.btn-edit:hover { 
+  background: #9bc0e4; 
+}
+
+.btn-del:hover { 
+  background: #e89898; 
+}
+
+.alert { 
+  padding: 10px; 
+  background: #fde8e8; 
+  color: #9b2c2c; 
+  border-radius: 8px; 
+  margin-bottom: 12px; 
+  display: none; 
+  font-size: 13px; 
+  text-align: center; 
+}

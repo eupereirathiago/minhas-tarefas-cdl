@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List - Gestão Pessoal</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Minhas Tarefas</h2>
+  
+  <div id="alert" class="alert"></div>
+
+  <div class="form-group">
+    <input type="text" id="taskInput" placeholder="O que precisa fazer?" maxlength="60">
+    <div class="row-inputs">
+      <select id="taskPrio">
+        <option value="Baixa">Prioridade Baixa</option>
+        <option value="Média" selected>Prioridade Média</option>
+        <option value="Alta">Prioridade Alta</option>
+      </select>
+      <input type="date" id="taskDate">
+    </div>
+    <button class="btn-add" id="btnSubmit">Adicionar Tarefa</button>
+  </div>
+
+  <div class="counter"><span id="taskCount">0</span>/10 tarefas</div>
+
+  <ul id="taskList"></ul>
+</div>
+
+<script src="./js/main.js"></script>
+</body>
+</html>
