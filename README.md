@@ -18,4 +18,4 @@ Aplicativo web de gerenciamento de tarefas desenvolvido como projeto acadêmico 
 ## 💻 Como Executar
 1. Clone este repositório:
    ```bash
-   git clone [https://github.com/SEU-USUARIO/NOME-DO-REPO.git](https://github.com/SEU-USUARIO/NOME-DO-REPO.git)
+   git clone [https://github.com/SEU-USUARIO/NOME-DO-REPO.git](https://github.com/eupereirathiago/minhas-tarefas-cdl/blob/main/index.html)
